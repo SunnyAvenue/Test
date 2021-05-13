@@ -22,11 +22,18 @@ struct ContentView: View {
     var body: some View {
         Text("Hello, world! it's Ken!").padding()
         
-//        let number = 12
         
-        let function = (12, "wrong")
+        let myWatch = arc4random() % 10;
         
-        Text("test is \(function.0)")
+        
+        let result = myWatch % 2;
+        
+        if result == 0 {
+            Text("do");
+        }
+        else {
+            Text("not to do");
+        }
     }
 }
 
