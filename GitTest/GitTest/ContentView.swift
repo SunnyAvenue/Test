@@ -31,8 +31,11 @@ struct ContentView: View {
         if result == 0 {
             Text("do");
         }
-        else {
+        else if {
             Text("not to do");
+        }
+        else {
+            Text("try again");
         }
     }
 }
